@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <input type="text" id="pesquisa" placeholder="pesquisar tarefa">
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button onclick="novaTarefa()">Nova tarefa</button></h2>
+            <!-- <h6>Nenhuma tarefa registrada</h6>
+              -->
+
+            <ul id="lista">
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                    <div class="actions">
+                        <box-icon type='solid' name='trash'></box-icon>
+                    </div>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+                <li>
+                    <h5>titulo tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
+                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
+                        harum quae, quam corrupti.</p>
+                </li>
+            </ul>
+        </section>
+        <section onclick="fecharModal()" id="overlay"></section>
+        <div id="criarTarefa" class="modal">
+            <form>
+                <h3>Criar tarefa <box-icon size="md" onclick="fecharModal()" name='x-circle'></box-icon></h3>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+                <button>Criar</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>
