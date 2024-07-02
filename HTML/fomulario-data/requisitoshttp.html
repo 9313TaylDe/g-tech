@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        body {
+            align-items: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #999;
+            text-align: center;
+        }
+
+        input {
+            background-color: darkmagenta;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="cep">CEP</label>
+        <input type="text" id="cep">
+        <label for="rua">RUA</label>
+        <input type="text" id="rua">
+        <label for="cidade">CIDADE</label>
+        <input type="text" id="cidade">
+        <label for="bairro">BAIRRO</label>
+        <input type="text" id="bairro">
+        <label for="estado">ESTADO</label>
+        <input type="text" id="estado">
+    </form>
+    <script src="requisitoshttp.js"></script>
+</body>
+
+</html>
