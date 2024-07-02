@@ -14,72 +14,21 @@
     </header>
     <main>
         <section id="tarefas">
-            <h2>Tarefas <button onclick="novaTarefa()">Nova tarefa</button></h2>
+            <h2>Tarefas <button onclick="abrirModal()">Nova tarefa</button></h2>
             <!-- <h6>Nenhuma tarefa registrada</h6>
               -->
 
             <ul id="lista">
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                    <div class="actions">
-                        <box-icon type='solid' name='trash'></box-icon>
-                    </div>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
-                <li>
-                    <h5>titulo tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci non distinctio esse, labore
-                        animi sunt consectetur porro! Recusandae est vitae veniam odit ipsam blanditiis fugit, totam
-                        harum quae, quam corrupti.</p>
-                </li>
             </ul>
         </section>
         <section onclick="fecharModal()" id="overlay"></section>
         <div id="criarTarefa" class="modal">
-            <form>
+            <form onsubmit="novaTarefa()">
                 <h3>Criar tarefa <box-icon size="md" onclick="fecharModal()" name='x-circle'></box-icon></h3>
                 <label for="titulo">Título</label>
-                <input type="text" id="titulo">
+                <input type="text" id="titulo" required>
                 <label for="descricao">Descrição</label>
-                <textarea id="descricao"></textarea>
+                <textarea id="descricao" required></textarea>
                 <button>Criar</button>
             </form>
         </div>
